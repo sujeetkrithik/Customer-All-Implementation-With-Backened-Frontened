@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .customeridd{
+        margin-right: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2 class="login">Login Page</h2>
+
+<form id="loginForm">
+    <input type="text" id="login-id" name="login id" placeholder="Enter Email"><br><br>
+    <input type="text" id="customer-password" name="password" placeholder="Password"><br><br>
+    <button type="button" onclick="submitLoginForm()">Login</button>
+</form>
+<br><br>
+<h2 class="customeridd">Customer List</h2>
+<table id="customerTable" border="1">
+    <thead>
+    <tr>
+        <th>Customer ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Street</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Customer data will be inserted here dynamically -->
+    </tbody>
+</table>
+<h2 class="customeridd">Customer Register Page</h2>
+<div id="editPopup" style="display: none;">
+    <form id="editForm">
+        <!-- Add the same input fields as in the customer form -->
+        <input type="text" id="edit-first-name" placeholder="First Name"><br>
+        <input type="text" id="edit-last-name" placeholder="Last Name"><br>
+        <input type="text" id="edit-email" placeholder="Email"><br>
+        <input type="text" id="edit-phone" placeholder="Phone"><br>
+        <input type="text" id="edit-address" placeholder="Address"><br>
+        <input type="text" id="edit-street" placeholder="Street"><br>
+        <input type="text" id="edit-city" placeholder="City"><br>
+        <input type="text" id="edit-state" placeholder="State"><br>
+
+        <button type="button" onclick="submitUpdatedData()">Update Customer</button>
+        <button type="button" onclick="closeEditPopup()">Cancel</button>
+    </form>
+</div>
+<form id="registrationForm">
+    <input type="text" id="first-name" name="first-name" placeholder="First Name"><br><br>
+    <input type="text" id="last-name" name="last-name" placeholder="Last Name"><br><br>
+    <input type="text" id="email" name="email" placeholder="Email"><br><br>
+    <input type="text" id="password" name="email" placeholder="Password"><br><br>
+    <input type="text" id="phone" name="phone" placeholder="Phone"><br><br>
+    <input type="text" id="address" name="address" placeholder="Address"><br><br>
+    <input type="text" id="street" name="street" placeholder="Street"><br><br>
+    <input type="text" id="city" name="city" placeholder="City"><br><br>
+    <input type="text" id="state" name="state" placeholder="State"><br><br>
+
+
+    <!-- Replace onclick with a function that handles the form submission -->
+    <button type="button" onclick="submitForm()">Register</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
